@@ -1,17 +1,15 @@
-import MainNavigation from '../navigation/mainNavigation';
+import LanguagePicker from '../LanguagePicker';
+import MainNavigation from '../navigation/MainNavigation';
 import NavigationItem from '../navigation/NavigationItem';
 
 export default function Header() {
     return (
         <>
-            <header>
-                <p>logo!</p>
+            <header className='page-header'>
                 <MainNavigation>
-                    <NavigationItem name='name1' link={'link1'}>
-                        <NavigationItem name='name1-1' link={'link1-1'} />
-                        <NavigationItem name='name1-2' link={'link1-2'} />
-                    </NavigationItem>
-                    <NavigationItem name='name2' link={'link2'} />
+                    <NavigationItem name='Home' link='/' />
+                    <NavigationItem name='My Projects' link='/projects' />
+                    <LanguagePicker currentLocale={'no'} />
                 </MainNavigation>
             </header>
         </>
