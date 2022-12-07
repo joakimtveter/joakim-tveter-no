@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
+$color-primary-50: #e0f2f1;
+$color-primary-10: #b2dfdb;
+$color-primary-20: #80cbc4;
+$color-primary-30: #4db6ac;
+$color-primary-40: #26a69a;
+$color-primary-50: #009688;
+$color-primary-60: #00897b;
+$color-primary-70: #00796b;
+$color-primary-80: #00695c;
+$color-primary-90: #004d40;
+
+$color-background: #121212;
+$color-text: #ffffff;
+$color-text-light: hsla(0, 0%, 100%, 0.87);
+$color-text-disabled: hsla(0, 0%, 100%, 0.5);
+
 html,
 body {
-    background-color: #121212;
-    color: #fff;
+    background-color: #{$color-background};
+    color: #{$color-text};
     padding: 0;
     margin: 0;
     line-height: 1.5;
@@ -24,6 +40,8 @@ a {
 address {
     font-style: normal;
 }
+
+// BASE STYLES
 
 body {
     display: flex;
@@ -53,18 +71,32 @@ main {
     flex-grow: 1;
 }
 
+// TYPOGRAPHY
 .display {
-    font-size: 88px;
+    margin-block: 1rem;
+    font-size: 99px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .intro-text {
-    max-width: 75ch;
-    font-size: 1.25rem;
+    max-width: 900px;
+    font-size: 1.5rem;
     font-weight: 300;
     margin: 0;
     padding: 0;
 }
 
+// HEADER STYLES
 .main-navigation {
     width: 100%;
 
@@ -83,7 +115,28 @@ main {
         text-transform: uppercase;
 
         &:hover {
-            background-color: hsla(0, 0%, 100%, 0.1);
+            background-color: #366332;
         }
     }
+}
+
+// FOOTER STYLES
+footer {
+}
+
+.copyright-footer {
+    margin-inline: auto;
+    padding: 0.25rem;
+    background-color: hsla(0, 0%, 0%, 0.25);
+}
+.copyright-text {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+// PAGE SECTIONS
+
+#intro-section {
+    padding-block: 10rem;
 }

@@ -9,7 +9,6 @@ export default function Header() {
                 <MainNavigation>
                     <NavigationItem name='Home' link='/' />
                     <NavigationItem name='My Projects' link='/projects' />
-                    <LanguagePicker currentLocale={'no'} />
                 </MainNavigation>
             </header>
         </>

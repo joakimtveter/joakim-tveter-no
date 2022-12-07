@@ -6,15 +6,10 @@ export default function TechnologiesSection() {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>React</li>
                 <li>Next.js</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Git</li>
-                <li>GitHub</li>
                 <li>VS Code</li>
-                <li>Adobe XD</li>
-                <li>Adobe Photoshop</li>
             </ul>
         </section>
     );
