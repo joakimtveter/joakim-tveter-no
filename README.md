@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Personal Website
+
+![image](/screenshot.png)
+
+My personal portfolio website and blog. Part of it was a school assignment for my Higher Proffesional Degree in [Front End Development](https://www.noroff.no/en/studies/vocational-school/front-end-development) at [Noroff School of technology and digital media](https://www.noroff.no/en/), but most of it is because I wanted to redo my personal website and wanted a place to write down what I have learned about web development.
+
+## Description
+
+Add a more detailed description of what your project entails and set out to do.
+
+You can add some bullet points if you'd like to:
+
+-   List item 1
+-   List item 2
+-   List item 3
+
+## Built With
+
+The project is built with the following techstack:
+
+-   [PNPM](https://pnpm.io/)
+-   [React.js](https://reactjs.org/)
+-   [Next.js](https://nextjs.org)
+-   [SCSS](https://sass-lang.com)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisits
+
+### Installing
+
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+
+1. Clone the repo:
 
 ```bash
-npm run dev
-# or
-yarn dev
+    git clone https://github.com/joakimtveter/noroff-cms-ca.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repo:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+`pnpm install`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Running
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To run the app, run the following command:
 
-## Learn More
+```bash
+pnpm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+To run the app in development mode, run the following command:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see website.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is a pesonal project and is therefore not awailable for contributions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+If you want to get a hold of me, contact me through linked in or on my websites contact section.
+
+[My LinkedIn page](https://www.linkedin.com/in/joakim-tveter)
+
+[My website](https://joakimtveter.no/#contact)
+
+## Acknowledgments
+
+The `.sr-only` class was informed by [Gaël Poupards](https://github.com/ffoodd) [GitHub Gist](https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034).

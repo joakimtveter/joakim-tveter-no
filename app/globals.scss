@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
 $color-primary-50: #e0f2f1;
-$color-primary-10: #b2dfdb;
-$color-primary-20: #80cbc4;
-$color-primary-30: #4db6ac;
-$color-primary-40: #26a69a;
-$color-primary-50: #009688;
-$color-primary-60: #00897b;
-$color-primary-70: #00796b;
-$color-primary-80: #00695c;
-$color-primary-90: #004d40;
+$color-primary-100: #b2dfdb;
+$color-primary-200: #80cbc4;
+$color-primary-300: #4db6ac;
+$color-primary-400: #26a69a;
+$color-primary-500: #009688;
+$color-primary-600: #00897b;
+$color-primary-700: #00796b;
+$color-primary-800: #00695c;
+$color-primary-900: #004d40;
 
 $color-background: #121212;
 $color-text: #ffffff;
 $color-text-light: hsla(0, 0%, 100%, 0.87);
 $color-text-disabled: hsla(0, 0%, 100%, 0.5);
+
+$breakpoint-mobile-down: 'max-width: 768px';
 
 html,
 body {
@@ -33,8 +35,17 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 * {
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 address {
@@ -42,7 +53,6 @@ address {
 }
 
 // BASE STYLES
-
 body {
     display: flex;
     flex-direction: column;
@@ -71,6 +81,11 @@ main {
     flex-grow: 1;
 }
 
+section {
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+}
+
 // TYPOGRAPHY
 .display {
     margin-block: 1rem;
@@ -79,12 +94,14 @@ main {
 }
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 300;
 }
 
 h2 {
-    font-size: 2rem;
+    margin-top: 0;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -121,9 +138,6 @@ h2 {
 }
 
 // FOOTER STYLES
-footer {
-}
-
 .copyright-footer {
     margin-inline: auto;
     padding: 0.25rem;
@@ -136,7 +150,92 @@ footer {
 }
 
 // PAGE SECTIONS
-
-#intro-section {
+.intro-section {
     padding-block: 10rem;
+}
+
+// TECHNOLOGIES SECTION STYLES
+.technology-list {
+    display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.technology-list__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// PROJECTS SECTION STYLES
+.project-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.project-card__image {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.project-card__title {
+    margin-top: 0;
+}
+
+.project-card__description {
+    color: $color-text-light;
+    margin-bottom: 1rem;
+}
+
+.project-card__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.project-card__footer a {
+    text-transform: uppercase;
+    color: $color-primary-200;
+}
+
+.intro-section {
+    display: flex;
+    gap: 1rem;
+}
+
+@media ($breakpoint-mobile-down) {
+    body {
+        padding-inline: 1rem;
+    }
+
+    .intro-section {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .technology-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .technology-list__item {
+        width: 80px;
+    }
 }
