@@ -8,9 +8,6 @@ const nextConfig = {
         localeDetection: false,
     },
     trailingSlash: true,
-    experimental: {
-        appDir: true,
-    },
 };
 
 module.exports = nextConfig;
