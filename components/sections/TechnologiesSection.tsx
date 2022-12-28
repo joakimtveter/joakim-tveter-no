@@ -10,9 +10,9 @@ import NestJsIcon from '../icons/NestJsIcon';
 
 export default function TechnologiesSection() {
     return (
-        <section>
-            <h2>Technologies</h2>
-            <p>Here are some of the technologies I use. </p>
+        <section id='technologies'>
+            <h2 className='section-heading'>Technologies</h2>
+            <p className='section-text'>Here are some of the technologies I use.</p>
             <ul className='technology-list'>
                 <li className='technology-list__item'>
                     <HtmlIcon />

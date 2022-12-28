@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+img,
+figure,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address {
+    overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select,
+address {
+    font-family: inherit;
+}
+
+address {
+    font-style: normal;
+}

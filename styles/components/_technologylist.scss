@@ -1,0 +1,25 @@
+.technology-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.technology-list__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//TODO: ADD BREAKPOINT VARIABLES
+@media (max-width: 768px) {
+    .technology-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .technology-list__item {
+        width: 80px;
+    }
+}

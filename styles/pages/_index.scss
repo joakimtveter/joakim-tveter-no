@@ -1,0 +1,13 @@
+.intro-section {
+    padding-block: 10rem;
+    display: flex;
+    gap: 1rem;
+}
+
+//TODO: ADD BREAKPOINT VARIABLES
+@media (max-width: 768px) {
+    .intro-section {
+        padding: 1rem;
+        flex-direction: column;
+    }
+}

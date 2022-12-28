@@ -8,9 +8,10 @@ export default function IntroSection() {
                     <span className='display'>Joakim Tveter</span>
                 </h1>
                 <p className='intro-text'>
-                    My name is pronaunced like /jəʊ.ə.kɪm/. I work as a mobile and front-end developer at Netpower,
-                    where I create amazing and accessible user experiences. I currently prusue for a Higher Professional
-                    degree in Front-end Development at Noroff.
+                    My name is pronaunced <strong>/jəʊ.ə.kɪm/</strong>. I work as a mobile and front-end developer at{' '}
+                    <a href='https://www.netpower.no/'>Netpower Web Solutions</a>, where I create amazing and accessible
+                    user experiences. I currently pursue for a Higher Professional degree in Front-end Development at{' '}
+                    <a href='https://www.noroff.no/en/'>Noroff</a>.
                 </p>
             </div>
             <Image src='/Joakim-Tveter-1080px.jpg' height='400' width='400' alt='Portrait of me, Joakim Tveter' />
